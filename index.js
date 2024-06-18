@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    // throw new Error('fake error')
+    res.json("Hello World")
 });
 
 app.use(errorMiddleware);
